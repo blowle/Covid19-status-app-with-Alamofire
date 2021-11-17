@@ -13,6 +13,7 @@
 		00371F8427455EA10012FBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00371F8227455EA10012FBDF /* Main.storyboard */; };
 		00371F8627455EAC0012FBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00371F8527455EAC0012FBDF /* Assets.xcassets */; };
 		00371F8927455EAC0012FBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00371F8727455EAC0012FBDF /* LaunchScreen.storyboard */; };
+		5E06D49C86CA5BC78E090DDA /* Pods_COVID19_KOR_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E952B352B204270264CDFA /* Pods_COVID19_KOR_APP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		00371F8527455EAC0012FBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00371F8827455EAC0012FBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00371F8A27455EAC0012FBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAC28C1FAC361A6FFCE8843 /* Pods-COVID19_KOR_APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19_KOR_APP.release.xcconfig"; path = "Target Support Files/Pods-COVID19_KOR_APP/Pods-COVID19_KOR_APP.release.xcconfig"; sourceTree = "<group>"; };
+		4E77FBB54747D1C808CBDB70 /* Pods-COVID19_KOR_APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID19_KOR_APP.debug.xcconfig"; path = "Target Support Files/Pods-COVID19_KOR_APP/Pods-COVID19_KOR_APP.debug.xcconfig"; sourceTree = "<group>"; };
+		B1E952B352B204270264CDFA /* Pods_COVID19_KOR_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COVID19_KOR_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E06D49C86CA5BC78E090DDA /* Pods_COVID19_KOR_APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				00371F7B27455EA10012FBDF /* COVID19_KOR_APP */,
 				00371F7A27455EA10012FBDF /* Products */,
+				16628CB7BE7DE5B92ABE28D1 /* Pods */,
+				9A6D7F06D2FDDF95B7EDA4C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = COVID19_KOR_APP;
 			sourceTree = "<group>";
 		};
+		16628CB7BE7DE5B92ABE28D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E77FBB54747D1C808CBDB70 /* Pods-COVID19_KOR_APP.debug.xcconfig */,
+				2DAC28C1FAC361A6FFCE8843 /* Pods-COVID19_KOR_APP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A6D7F06D2FDDF95B7EDA4C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E952B352B204270264CDFA /* Pods_COVID19_KOR_APP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00371F8D27455EAC0012FBDF /* Build configuration list for PBXNativeTarget "COVID19_KOR_APP" */;
 			buildPhases = (
+				A220129625F4704D6DB161F5 /* [CP] Check Pods Manifest.lock */,
 				00371F7527455EA10012FBDF /* Sources */,
 				00371F7627455EA10012FBDF /* Frameworks */,
 				00371F7727455EA10012FBDF /* Resources */,
+				3BB3178AC086AC28AD3F89F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BB3178AC086AC28AD3F89F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19_KOR_APP/Pods-COVID19_KOR_APP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COVID19_KOR_APP/Pods-COVID19_KOR_APP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COVID19_KOR_APP/Pods-COVID19_KOR_APP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A220129625F4704D6DB161F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-COVID19_KOR_APP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00371F7527455EA10012FBDF /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		00371F8E27455EAC0012FBDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E77FBB54747D1C808CBDB70 /* Pods-COVID19_KOR_APP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		00371F8F27455EAC0012FBDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DAC28C1FAC361A6FFCE8843 /* Pods-COVID19_KOR_APP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
