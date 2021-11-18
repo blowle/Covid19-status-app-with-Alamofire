@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-WX-ehT">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-WX-ehT">
                                 <rect key="frame" x="24" y="112" width="366" height="61"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wkM-92-QiA">
@@ -71,7 +71,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwr-Bc-7eg" customClass="PieChartView" customModule="Charts">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="yaJ-pg-EUF">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwr-Bc-7eg" customClass="PieChartView" customModule="Charts">
                                 <rect key="frame" x="24" y="197" width="366" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -83,6 +86,8 @@
                             <constraint firstItem="uwr-Bc-7eg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="FvR-eK-vLL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uwr-Bc-7eg" secondAttribute="trailing" constant="24" id="TMs-rV-GlW"/>
                             <constraint firstItem="uwr-Bc-7eg" firstAttribute="top" secondItem="eZ5-WX-ehT" secondAttribute="bottom" constant="24" id="V74-rv-SU3"/>
+                            <constraint firstItem="yaJ-pg-EUF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WyV-RA-gaO"/>
+                            <constraint firstItem="yaJ-pg-EUF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a93-4i-vB3"/>
                             <constraint firstItem="eZ5-WX-ehT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="i9m-Ut-20O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eZ5-WX-ehT" secondAttribute="trailing" constant="24" id="iam-gF-ngo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uwr-Bc-7eg" secondAttribute="bottom" constant="24" id="nF0-nC-ivj"/>
@@ -90,6 +95,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="doy-YH-MNO"/>
                     <connections>
+                        <outlet property="indicatorView" destination="yaJ-pg-EUF" id="gD3-Nh-dCj"/>
+                        <outlet property="labelStackView" destination="eZ5-WX-ehT" id="o10-HC-agI"/>
                         <outlet property="newCaseLabel" destination="wE1-pr-3hF" id="1nK-bk-Sn8"/>
                         <outlet property="pieChartView" destination="uwr-Bc-7eg" id="Jtd-4H-23n"/>
                         <outlet property="totalCaseLabel" destination="0vu-md-0jU" id="vNH-tQ-UUo"/>
